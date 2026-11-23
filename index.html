@@ -10,7 +10,7 @@
 <meta property="og:title" content="دعوة زفاف محمد وفاطمة">
 <meta property="og:description" content="الأحد ٢٠ ديسمبر ٢٠٢٦ — قاعة قصر الأميرات، نادي الإنتاج الحربي، حلوان">
 <meta property="og:url" content="https://mohamed-fatma.pages.dev/">
-<meta property="og:image" content=https://mohamed-fatma.pages.dev/preview-square-1200.jpg">
+<meta property="og:image" content="https://mohamed-fatma.pages.dev/preview-square-1200.jpg">
 <meta property="og:image:type" content="image/jpeg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="1200">
@@ -434,6 +434,16 @@ html:not(.on) #page{visibility:hidden}
 #doorTxt{animation:none;opacity:0;transition:opacity 1.2s ease}
 #doorTxt.show{opacity:1}
 #doorTxt.out{opacity:0!important}
+
+/* v13 — first card: everything inside the lace frame, names on one line */
+.inner{top:50%;width:52cqw;display:flex;flex-direction:column;align-items:center}
+.inner>*{margin:0;width:100%}
+.bsm{font-size:3.7cqw;line-height:1.3;margin-bottom:1.2cqw;--d:.3s}
+.vs{font-family:"Amiri Quran","Amiri","El Messiri","Geeza Pro",serif;font-weight:400;font-size:2.5cqw;line-height:1.75;color:#5a4724;text-wrap:balance;margin-bottom:1.4cqw;--d:.7s}
+.card.pop .vs .w{animation-delay:calc(var(--d,0s) + var(--i,0)*.035s)}
+.names{font-size:7.8cqw;line-height:1.2;white-space:nowrap;margin:0 0 1.2cqw;--d:1.6s}
+.inv{font-size:3.2cqw;line-height:1.45;font-weight:600;color:#4a3b22;margin-bottom:.8cqw;--d:2.1s}
+.place{font-size:3.6cqw;line-height:1.3;font-weight:700;color:#8a6b2f;margin-top:0;--d:2.5s}
 </style><style id="skf-css">
 #skf{--skf-ink:#4a3b22;--skf-accent:#7a5a22;--skf-gold:#9a7b3f;
   box-sizing:border-box;position:relative;width:100%;max-width:none;margin:0;pointer-events:auto;
@@ -469,11 +479,10 @@ html:not(.on) #page{visibility:hidden}
  <section class="s1">
   <div class="card" id="card"><img class="doily" alt="" src="doily.webp"><div class="inner">
    <p class="bsm">بسم الله الرحمن الرحيم</p>
-   <p class="vs">«وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً»</p>
-   <p class="fam">بمشاركة عائلتيهما</p>
+   <p class="vs">﴿وَمِنْ آيَاتِهِ أَنْ خَلَقَ لَكُم مِّنْ أَنفُسِكُمْ أَزْوَاجًا لِّتَسْكُنُوا إِلَيْهَا وَجَعَلَ بَيْنَكُم مَّوَدَّةً وَرَحْمَةً إِنَّ فِي ذَلِكَ لَآيَاتٍ لِّقَوْمٍ يَتَفَكَّرُونَ﴾</p>
    <h1 class="names">محمد <span class="and">و</span> فاطمة</h1>
-   <p class="inv">يدعوانكم لحضور حفل زفافهما</p>
-   <p class="wl">ننتظركم لنشاركنا أجمل أيام العمر</p>
+   <p class="inv">نتشرف بدعوة سيادتكم<br>لحضور حفل زفافنا</p>
+   <p class="place">قاعة قصر الأميرات</p>
   </div></div>
   <div class="hint"><span>اسحب لأسفل</span><svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6"/></svg></div>
  </section>
